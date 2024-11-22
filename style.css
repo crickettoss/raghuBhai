@@ -12,7 +12,7 @@
     display: flex;
     overflow: hidden;
     
-    animation: boxShadow 1s linear infinite;
+    animation: boxShadow 2s linear infinite;
 }
 
 #text {
@@ -38,7 +38,7 @@
     content: "";
     position: absolute;
     inset: 5px;
-    animation: colurChange 1s linear infinite;
+    animation: colurChange 2s linear infinite;
     
 }
 
