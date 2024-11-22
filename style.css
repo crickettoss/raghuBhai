@@ -1,8 +1,8 @@
 
 #box {
-    background-color: rgb(0, 0, 0);
-    width: 200px;
-    height: 50px;
+    background-color: rgb(2, 74, 255);
+    width: 250px;
+    height: 70px;
     display: grid;
     place-items: center;
     place-content:center;
@@ -11,11 +11,12 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    
+    animation: boxShadow 1s linear infinite;
 }
 
 #text {
      color: white;
-    font-size: xx-large;
     margin-top:center;
     z-index: 2;
 }
@@ -36,8 +37,9 @@
     border-radius: 20px;
     content: "";
     position: absolute;
-    background-color: rgb(21, 9, 91);
     inset: 5px;
+    animation: colurChange 1s linear infinite;
+    
 }
 
 @keyframes rotate {
@@ -66,6 +68,32 @@
         transform: scale(.9)
     }
 }
+
+
+@keyframes colurChange {
+    0%{
+       background-color: red;
+    } 50%{
+       background-color: rgb(255, 132, 0);
+    } 70%{
+       background-color: rgb(75, 172, 5);
+    }100%{
+       background-color: rgb(0, 94, 255);
+    }
+}
+
+@keyframes boxShadow {
+    0%{
+      box-shadow: 1px .5px 10px 2px red;
+    } 50%{
+      box-shadow: 1px 1px 20px 4px rgb(255, 132, 0);
+    } 70%{
+      box-shadow: 1px 2px 30px 8px rgb(75, 172, 5);
+    }100%{
+      box-shadow: 1px .5px 10px 2px rgb(0, 94, 255);
+    }
+}
+
 
 html{
     background-image:linear-gradient(to right,purple,black)
